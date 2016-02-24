@@ -3,8 +3,6 @@
     color: white;
 }
 
-
-
 .content-left, .content-right-top {
   background-color: grey;
 }
@@ -23,23 +21,26 @@
 
 .TNWnews_Nav a{
   color: white;
+  width: 120px;
 }
-/*.top-bar-left ul li {
-  background-color: white;
-}*/
 
+.TNWnews_Nav ul {
+  position: absolute;
+  min-width: 100%;
+}
+ 
 .TNWnews_Nav .menu li a{
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(255, 102, 0);
   color:white;
 }
 
-.top-bar-left .dropdown > li:not(.TNWnews_Nav)  {
+.top-bar-left .dropdown > li:not(.TNWnews_Nav), .follow-channel ul{
     background-color:white;
 
 }
 
 .top-bar-left .dropdown > li:not(.TNWnews_Nav) a  {
-     line-height: 14px;
+    font-size: 14px;
     height: 48px;
     padding: 18px 12px 0 12px;
     text-align: center;
@@ -47,12 +48,7 @@
     font-family: 'Shentox Medium',sans-serif;
     font-weight: 500;
     letter-spacing: .02em;
-    color: grey;
-}
-
-
-.TNWnews_Nav .menu li a: hover {
-  background-color:white;
+    color: rgb(153, 153, 153);
 }
 
 .TNWnes_Nav ~ li a {
@@ -60,7 +56,39 @@
   padding-left: 8px;
 }
 
-.searchIcon {
-  padding-left: 10px;
+.seach-channel {
+	float: right;
 }
 
+#twitter-Icon {
+	color: rgb(85, 172, 238);
+}
+
+#facebook-Icon {
+	color:rgb(59, 89, 152);
+}
+
+#ellipsis-Icon, #search-Icon {
+	color:rgb(153, 153, 153);
+}
+
+#search-Icon {
+	padding:14px;
+}
+
+.follow-channel ul li a {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.follow-channel ul {
+	padding-left: 12px;
+	padding-right: 12px;
+	border-left: 1px solid rgb(243, 243, 243);
+	border-right: 1px solid rgb(243, 243, 243);
+	display: inline-block;
+	margin-left: 150px;
+}
+
+/*drop down hover doesn't work*/
+/*follow should move with search*/
